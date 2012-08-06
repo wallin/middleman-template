@@ -113,6 +113,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-filter
+  compass
   execjs
   haml
   haml_coffee_assets
