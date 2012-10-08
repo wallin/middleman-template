@@ -13,7 +13,7 @@ gem 'sqwish'
 gem 'coffee-filter'
 
 # Javascript HAML-templating with Coffeescript
-gem 'haml_coffee_assets'
+#gem 'haml_coffee_assets'
 
 gem 'execjs'
 
