@@ -13,6 +13,12 @@ activate :directory_indexes
 #   config.output_style = :compact
 # end
 
+
+###
+# HAML
+###
+set :haml, {:ugly => true}
+
 ###
 # Page options, layouts, aliases and proxies
 ###
