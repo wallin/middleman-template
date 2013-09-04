@@ -1,6 +1,11 @@
-source :rubygems
+source "https://rubygems.org"
 
-gem "middleman", "~>3.0.0"
+gem "middleman", "~>3.1.4"
+
+# Some useful plugins
+gem "middleman-favicon-maker"
+gem "middleman-livereload"
+gem "middleman-deploy"
 
 gem 'haml'
 gem 'sass'
@@ -10,7 +15,7 @@ gem 'uglifier'
 gem 'sqwish'
 
 # Inline coffeescript for HAML
-gem 'coffee-filter'
+# gem 'coffee-filter'
 
 # Javascript HAML-templating with Coffeescript
 #gem 'haml_coffee_assets'
@@ -26,7 +31,7 @@ gem 'execjs'
 # gem 'backbone-source'
 
 # For Heroku deployment
-gem 'rack-contrib'
-gem 'puma'
-gem 'foreman'
-gem 'heroku_san'
+# gem 'rack-contrib'
+# gem 'puma'
+# gem 'foreman'
+# gem 'heroku_san'
