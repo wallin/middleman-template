@@ -13,11 +13,23 @@ activate :directory_indexes
 #   config.output_style = :compact
 # end
 
+###
+# Deploy
+###
+
+# activate :deploy do |deploy|
+#   deploy.method = :git
+#   # Optional Settings
+#   # deploy.remote   = 'custom-remote' # remote name or git url, default: origin
+#   # deploy.branch   = 'custom-branch' # default: gh-pages
+#   # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
+#   # deploy.commit_message = 'custom-message'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
+# end
 
 ###
 # HAML
 ###
-set :haml, {:ugly => true}
+set :haml, ugly: true
 
 ###
 # Page options, layouts, aliases and proxies
@@ -64,7 +76,7 @@ set :images_dir, 'images'
 # Add bower's directory to sprockets asset path
 after_configuration do
   @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
-  sprockets.append_path File.join "#{root}", @bower_config["directory"]
+  sprockets.append_path File.join "#{root}", @bower_config['directory']
 end
 
 # Build-specific configuration

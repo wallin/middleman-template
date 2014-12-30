@@ -1,11 +1,11 @@
 source "https://rubygems.org"
 
-gem "middleman", "~>3.2.2"
+gem "middleman", "~>3.3.6"
 
 # Some useful plugins
 gem "middleman-favicon-maker"
 gem "middleman-livereload"
-gem "middleman-deploy"
+gem "middleman-deploy", '~> 1.0.0'
 
 gem 'haml'
 gem 'sass'
